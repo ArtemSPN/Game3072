@@ -1,0 +1,183 @@
+
+html {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  overflow: hidden;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background-color: #e2e8e2;
+  width: 2%;
+  padding-bottom: 2%;
+  position: relative;
+  text-align: center;
+  min-width: 470px;
+  min-height: 470px;
+  color: #131212;
+  border-radius: 10px;
+}
+
+.modal-content li {
+  @apply my-3 ml-2;
+}
+
+
+.close-button {
+  position: absolute;
+  top: 5px;
+  right: 20px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  .modal-content {
+    max-width: 300px;
+  }
+}
+
+.closing .modal {
+  opacity: 0;
+  transition: opacity 500ms ease-in-out;
+}
+
+.closing .game-container {
+  filter: blur(0);
+  transition: filter 500ms ease-in-out;
+}
+
+.headerAuthModal{
+  font-size: 50px;
+}
+
+.inputZone{
+  margin-top: 30px;
+  width: 80%;
+}
+
+.text-field__label {
+  display: block;
+  text-align: left;
+  font-size: 22px;
+  margin-bottom: 0.25rem;
+}
+
+.input{
+  width: 100%;
+  padding: 5px;
+  height: 40px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.btnReg{
+  position: absolute;
+  width: 88%;
+  display: flex;
+  justify-content: center;
+  bottom: 30px;
+}
+
+.error{
+  font-style: 20px;
+  color: red;
+  margin-bottom: -15px;
+}
+
+.close{
+  position: absolute;
+  right: 15px;
+  font-size: 45px;
+  top: -10px;
+  font-family: monospace;
+}
+
+.acc{
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.profileModal{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.avatarWrap{
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.avatar{
+  width: 300px;
+}
+
+.info{
+  width: 60%;
+  text-align: left;
+  font-size: 22px;
+}
